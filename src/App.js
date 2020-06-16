@@ -10,7 +10,7 @@ function App() {
   const [textPosition, setTextPosition] = useState(0);
   return (
     <Router>
-      <div>
+      <div className = "App">
          <Canvas textPosition = {textPosition} image = "https://www.wallpaperflare.com/static/617/455/618/avatar-the-last-airbender-last-air-bender-wallpaper-preview.jpg" text = "We are going on a trip" />
          <input type="range" id="points" name="points" min="0" max="100" value={textPosition} onChange = {(e) => setTextPosition(e.target.value)} />
 
