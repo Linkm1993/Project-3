@@ -5,10 +5,7 @@ import Wrapper from "../src/components/Wrapper";
 import TestPage1 from "../src/components/pages/TestPage1";
 import TestPage2 from "../src/components/pages/TestPage2";
 
-function App() {
-  
-
-  
+function App() {  
   return (
     <Router>
       <div>
