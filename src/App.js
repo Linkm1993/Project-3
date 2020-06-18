@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import html2canvas from "html2canvas";
@@ -7,7 +7,7 @@ import html2canvas from "html2canvas";
 import Wrapper from "../src/components/Wrapper";
 import TestPage1 from "../src/components/pages/TestPage1";
 import TestPage2 from "../src/components/pages/TestPage2";
-import Canvas from "./components/Canvas";
+import TestPage3 from "../src/components/pages/TestPage3";
 
 function renderImage () {
 let capture = document.getElementById("canvas")
@@ -19,7 +19,6 @@ html2canvas(capture).then(canvas => {
 }
 
 function App() {  
-  const [textPosition, setTextPosition] = useState(0);
   return (
     <Router>
       <div className = "App">
@@ -30,10 +29,10 @@ function App() {
         <Wrapper>
           <Route exact path="/" component={TestPage1} />
           <Route exact path="/testpage2" component={TestPage2} />
+          <Route exact path="/testpage3" component={TestPage3} />
         </Wrapper>
-      </div>
+        </div>
     </Router>
-
   );
 }
 

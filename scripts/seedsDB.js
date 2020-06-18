@@ -8,15 +8,15 @@ mongoose.connect(
 const memeSeed = [
     {
         title: "Modern Problems",
-        image: "../public/images/modenProblems.jpg"
+        image: "../images/modenProblems.jpg"
     },
     {
         title: "SpongeBob Mocking",
-        image: "../public/images/mockingSpongeBob.jpg"
+        image: "../images/mockingSpongeBob.jpg"
     },
     {
         title: "Surprised Pikachu",
-        image: "../public/images/surprisedPika.jpg"
+        image: "../images/surprisedPika.jpg"
     }
 ];
 
