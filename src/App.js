@@ -8,6 +8,7 @@ import Wrapper from "../src/components/Wrapper";
 import TestPage1 from "../src/components/pages/TestPage1";
 import TestPage2 from "../src/components/pages/TestPage2";
 import TestPage3 from "../src/components/pages/TestPage3";
+import Twitter from "../src/components/Twitter/index";
 
 function renderImage () {
 let capture = document.getElementById("canvas")
@@ -18,6 +19,8 @@ html2canvas(capture).then(canvas => {
 });
 }
 
+
+
 function App() {  
   return (
     <Router>
@@ -25,6 +28,7 @@ function App() {
          <Canvas textPosition = {textPosition} image = "/images/modenProblems.jpg" text = "We are going on a trip" />
          <input type="range" id="points" name="points" min="0" max="100" value={textPosition} onChange = {(e) => setTextPosition(e.target.value)} />
           <button onClick = {() => renderImage()} >Render</button>
+          <button onClick = {Twitter}>Twitter</button>
           <img id = "resultImage" alt = "result will render here" />
         <Wrapper>
           <Route exact path="/" component={TestPage1} />
