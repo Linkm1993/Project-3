@@ -9,7 +9,7 @@
     "antd": "^4.3.4",
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "html-to-image": "^0.1.1",
+    "html2canvas": "^1.0.0-rc.5",
     "mongoose": "^5.9.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -20,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "dev": "react-scripts build && node server",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "seed": "node scripts/seedsDB.js",
