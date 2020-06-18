@@ -30,16 +30,12 @@ function TestPage3()  {
                 <h1> No Memes to Display</h1>
             ) : (
                 <GalleryList>
-                {memes.map(meme => {
-                    return (
-                        <GalleryListItem 
-                            href={meme.image}
-                            alt={meme.title}
-                            // id = {meme._id}
-                        />
-                        )
+                    {memes.map(meme => { 
+                        return <GalleryListItem  
+                            src={meme.image} 
+                            title={meme.title} /> 
+                        }) 
                     })
-                })
                 </GalleryList>
             )}
         </div>
