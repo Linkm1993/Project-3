@@ -5,16 +5,12 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const apiRoutes = require("./routes/apiRoutes")
 
-<<<<<<< HEAD
 // Serve up static assets (usually on heroku)
   app.use(express.static("build"));
 
-=======
 // Define middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-  app.use(express.static("build"));
 
   // Connect to the Mongo DB
 mongoose.connect(
@@ -24,7 +20,6 @@ mongoose.connect(
 
 //use api route
 app.use("/api",apiRoutes)
->>>>>>> master
 
 // Send every request to the React app
 // Define any API routes before this runs
