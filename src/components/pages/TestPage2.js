@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import Canvas from "../Canvas/Canvas";
 import API from "../../utils/api"
 import {GalleryList, GalleryListItem} from "../GalleryList"
+import Twitter from "react-twitter-auth"
 
 function TestPage2()  {
     const history = useHistory();
