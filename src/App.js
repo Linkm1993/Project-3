@@ -27,11 +27,6 @@ function App() {
   return (
     <Router>
       <div className = "App">
-         <Canvas textPosition = {textPosition} image = "/images/modenProblems.jpg" text = "We are going on a trip" />
-         <input type="range" id="points" name="points" min="0" max="100" value={textPosition} onChange = {(e) => setTextPosition(e.target.value)} />
-          <button onClick = {() => renderImage()} >Render</button>
-          <button onClick = {Twitter}>Twitter</button>
-          <img id = "resultImage" alt = "result will render here" />
         <Wrapper>
           <Route exact path="/" component={TestPage1} />
           <Route exact path="/testpage2" component={TestPage2} />
