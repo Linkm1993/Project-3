@@ -1,23 +1,51 @@
 import React, {useState} from "react";
 import { useHistory } from "react-router-dom";
 import Canvas from "../Canvas/Canvas";
+import API from "../../utils/api"
+import {GalleryList, GalleryListItem} from "../GalleryList"
 
 function TestPage2()  {
     const history = useHistory();
+    const [memes, setMemes] = useState([])
     const [textPosition, setTextPosition] = useState(0);
       
     const handleClick = event => {
         event.preventDefault();
         history.push("/testpage3");
     }
-        return (
-            <div className="App">
-                <Canvas textPosition = {textPosition} image = "https://www.wallpaperflare.com/static/617/455/618/avatar-the-last-airbender-last-air-bender-wallpaper-preview.jpg" text = "We are going on a trip" />
-                <input type="range" id="points" name="points" min="0" max="100" value={textPosition} onChange = {(e) => setTextPosition(e.target.value)} />
-                <p>This is my test text2 </p>
-                <button onClick={handleClick}>Switch to page 3</button>
-            </div>
-        );
+
+    const handleMemes = event => {
+        event.preventDefault();
+        console.log("Handling Memes")
+        API.getMemes()
+            .then(res =>setMemes(res.data))
+            .catch(err => console.log(err))
+    }
+    return (
+        <div className="App">
+            <Canvas textPosition = {textPosition} image = "https://www.wallpaperflare.com/static/617/455/618/avatar-the-last-airbender-last-air-bender-wallpaper-preview.jpg" text = "We are going on a trip" />
+            <input type="range" id="points" name="points" min="0" max="100" value={textPosition} onChange = {(e) => setTextPosition(e.target.value)} />
+            <p>This is my test text2 </p>
+            <button onClick={handleClick}>Switch to page 3</button>
+
+            <button onClick={handleMemes}>Load Memes</button>
+        {!memes.length ? ( 
+            <h1> No Memes to Display</h1>
+        ) : (
+            <GalleryList>
+                {memes.map(meme => { 
+                    return (
+                        <GalleryListItem  
+                            src={meme.image} 
+                            title={meme.title} 
+                        />) 
+                    }) 
+                })
+        
+            </GalleryList>
+        )}
+        </div>
+    );
 }
 
 export default TestPage2;
