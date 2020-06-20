@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import Canvas from "../Canvas/Canvas";
 import API from "../../utils/api"
 import {GalleryList, GalleryListItem} from "../GalleryList"
+import Upload from "../Upload"
 
 function TestPage2()  {
     const history = useHistory();
@@ -44,6 +45,8 @@ function TestPage2()  {
         
             </GalleryList>
         )}
+
+        <Upload />
         </div>
     );
 }
