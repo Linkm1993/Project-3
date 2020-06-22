@@ -4,7 +4,7 @@ import html2canvas from 'html2canvas';
 const renderImage = (action) => {
     html2canvas(document.getElementById('capture'))
     .then (data => {
-        let pngFile = data.toDataURL();
+        let pngFile = data.toDataURL(); 
         if (action === 'save') {
             let a = document.getElementById('downloader'); // For the user to be able to download result image
             a.href = pngFile;
