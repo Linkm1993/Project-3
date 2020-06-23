@@ -18,14 +18,14 @@ const renderImage = (action) => {
 }
 
 
-export default ({image, text, textPosition}) => {
+export default ({image, text, textPosition, textColor}) => {
 
     const [shareSave, setShareSave] = useState("hidden")
 
     return (
-        <div id = "canvas" className = "canvas" style = {{position: "absolute", minHeight: "310px", minWidth: "414px", margin: "0 auto"}}>
+        <div id = "canvas" className = "canvas" style = {{position: "relative", height: "310px", width: "414px", margin: "0 auto"}}>
             <div id = 'capture' className = "imageLayer" style = {{position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundImage: `url(${image})`, backgroundSize: "cover", zIndex: "1"}} onClick = {e => setShareSave("visible")}>
-                <div className = "textLayer" style = {{position: "absolute", left: 0, right: 0, top: `${textPosition}%`, color: "white", fontWeight: "bolder", zIndex: "2"}}>
+                <div className = "textLayer" style = {{position: "absolute", left: 0, right: 0, top: `${textPosition}%`, color: `${textColor}`, fontWeight: "bolder", zIndex: "2"}}>
                     {text}
                 </div>
             </div>
