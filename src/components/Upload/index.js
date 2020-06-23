@@ -1,5 +1,5 @@
-import React, {useRef} from "react";
-import ReactDOM from "react-dom"
+import React from "react";
+// import ReactDOM from "react-dom"
 
 function Upload(){
     
@@ -45,18 +45,24 @@ function Upload(){
                 border: "2px dashed black"
 
             }}
-            onClick={() => imageUploader.current.click()}
+            // onClick={() => imageUploader.current.click()}
             >
+
+               
                 <img 
                 alt="upload location" 
                 ref={uploadedImage}
                 style={{
                     width: "100%",
-                    height: "100%",
-                    position: "absolute"
+                    // height: "60px",
+                    position: "relative"
                 }} />
             </div>
-                Click to upload Image
+
+            <button onClick={() => imageUploader.current.click()}>
+                    click here
+
+                </button>
         </div>
          
     )
