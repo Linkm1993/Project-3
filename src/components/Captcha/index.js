@@ -36,7 +36,7 @@ class Captcha extends Component {
 
   render() {
     return (
-        <div>
+        <div className="recaptcha">
           <Recaptcha
             sitekey="6LdbQaUZAAAAAI9_76pHoxqJ-QSmx9ahpIWHbkQq"
             render="explicit"
