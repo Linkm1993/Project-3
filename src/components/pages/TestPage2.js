@@ -3,8 +3,8 @@ import { useHistory } from "react-router-dom";
 import Canvas from "../Canvas/Canvas";
 import API from "../../utils/api"
 import {GalleryList, GalleryListItem} from "../GalleryList"
-import Upload from "../Upload"
-import Twitter from "react-twitter-auth"
+import Upload from "../Upload";
+import Twitter from "react-twitter-auth";
 import html2canvas from "html2canvas";
 
 function renderImage () {
@@ -61,7 +61,7 @@ function TestPage2()  {
             </GalleryList>
         )}
 
-        <Upload />
+        <Upload  />
         </div>
     );
 }
