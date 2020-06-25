@@ -6,20 +6,12 @@ import {GalleryList, GalleryListItem} from "../GalleryList"
 import Upload from "../Upload";
 import Twitter from "react-twitter-auth";
 import html2canvas from "html2canvas";
-
-function renderImage () {
-    let capture = document.getElementById("canvas")
-    let pngData;
-    html2canvas(capture).then(canvas => {
-      pngData = canvas.toDataURL();
-      document.querySelector("#resultImage").src = pngData;
-    });
-    }
+import OptionsPage from "../Canvas/Options"
 
 function TestPage2()  {
     const history = useHistory();
     const [memes, setMemes] = useState([])
-    const [textPosition, setTextPosition] = useState(0);
+    const [options, setOptions] = useState({text1: "Going on a trip", textPosition1: 0, textColor1: "#FFFFFF", textSize1: 16, text2: "", textPosition2: 0, textColor2: "#FFFFFF", textSize2: 16}) 
       
     const handleClick = event => {
         event.preventDefault();
@@ -37,9 +29,8 @@ function TestPage2()  {
         <div className="App">
             <p>This is my test text2 </p>
 
-            <Canvas textPosition = {textPosition} image = "/images/modenProblems.jpg" text = "We are going on a trip" />
-            <input type="range" id="points" name="points" min="0" max="100" value={textPosition} onChange = {(e) => setTextPosition(e.target.value)} />
-             <button onClick = {() => renderImage()} >Render</button>
+            <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = "/images/modenProblems.jpg" text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} />
+            <OptionsPage options = {options} setOptions = {setOptions} /> 
             <button onClick = {Twitter}>Twitter</button>
             <img id = "resultImage" alt = "result will render here" />
             <button onClick={handleClick}>Switch to page 3</button>

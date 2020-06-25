@@ -1,38 +1,51 @@
 .App {
   text-align: center;
+  font-family: "montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  background: url(./Canva\ -\ Jack\ Skelington\ Vinyl\ Figure\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h2 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  text-transform: uppercase;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.h3 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+Button {
+  background: linear-gradient(#333232, #fafafa, #8f8b8b);
+  border: 0;
+  width: 100px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 45%;
+  cursor: pointer;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  outline: none;
+  transition: 0.3s linear;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+Button:hover {
+  opacity: .5;
 }
+
+.recatpcha {
+  background: black;
+}
+
+  
