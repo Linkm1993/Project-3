@@ -20,7 +20,7 @@ function renderImage () {
 function TestPage2()  {
     const history = useHistory();
     const [memes, setMemes] = useState([])
-    const [options, setOptions] = useState({textPosition: 0, textColor: "#FFFFFF"}) 
+    const [options, setOptions] = useState({text1: "Going on a trip", textPosition1: 0, textColor1: "#FFFFFF", textSize1: 16, text2: "", textPosition2: 0, textColor2: "#FFFFFF", textSize2: 16}) 
       
     const handleClick = event => {
         event.preventDefault();
@@ -38,7 +38,7 @@ function TestPage2()  {
         <div className="App">
             <p>This is my test text2 </p>
 
-            <Canvas textPosition = {options.textPosition} image = "/images/modenProblems.jpg" text = "We are going on a trip" textColor = {options.textColor} />
+            <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = "/images/modenProblems.jpg" text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} />
             <OptionsPage options = {options} setOptions = {setOptions} /> 
              <button onClick = {() => renderImage()} >Render</button>
             <button onClick = {Twitter}>Twitter</button>
