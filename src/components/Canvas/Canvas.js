@@ -18,15 +18,18 @@ const renderImage = (action) => {
 }
 
 
-export default ({image, text, textPosition, textColor}) => {
+export default ({image, text1, textPosition1, textColor1, textSize1, text2, textPosition2,textColor2,textSize2}) => {
 
     const [shareSave, setShareSave] = useState("hidden")
 
     return (
         <div id = "canvas" className = "canvas" style = {{position: "relative", height: "310px", width: "414px", margin: "0 auto"}}>
             <div id = 'capture' className = "imageLayer" style = {{position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundImage: `url(${image})`, backgroundSize: "cover", zIndex: "1"}} onClick = {e => setShareSave("visible")}>
-                <div className = "textLayer" style = {{position: "absolute", left: 0, right: 0, top: `${textPosition}%`, color: `${textColor}`, fontWeight: "bolder", zIndex: "2"}}>
-                    {text}
+                <div className = "textLayer" style = {{position: "absolute", left: 0, right: 0, top: `${textPosition1}%`, color: `${textColor1}`, fontWeight: "bolder", fontSize: `${textSize1}px`, zIndex: "2"}}>
+                    {text1}
+                </div>
+                <div className = "textLayer" style = {{position: "absolute", left: 0, right: 0, top: `${textPosition2}%`, color: `${textColor2}`, fontWeight: "bolder", fontSize: `${textSize2}px`, zIndex: "2"}}>
+                    {text2}
                 </div>
             </div>
         <div id = "canvasOptions" style = {{position: "absolute", top: 0, bottom: 0, left: 0, right: 0, backgroundColor: "rgba(0,0,0,0.8)", visibility: shareSave, zIndex: 3}}>
