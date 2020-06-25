@@ -14,8 +14,8 @@ function Welcome()  {
 
     return (
         <div className="Wcont">
-            <Title level={2}>Welcome to the Meme myself and I app!</Title>
-            <Title level={3}>Create Download Share!</Title>
+            <Title class="h2" level={2}>Meme myself and I app!</Title>
+            <Title class="h3" level={3}>Create Download Share!</Title>
             <Button shape="round" onClick={handleClick}>Get Started</Button>
             <Captcah />
         </div>
