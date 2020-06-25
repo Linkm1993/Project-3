@@ -8,15 +8,6 @@ import Twitter from "react-twitter-auth"
 import html2canvas from "html2canvas";
 import OptionsPage from "../Canvas/Options"
 
-function renderImage () {
-    let capture = document.getElementById("canvas")
-    let pngData;
-    html2canvas(capture).then(canvas => {
-      pngData = canvas.toDataURL();
-      document.querySelector("#resultImage").src = pngData;
-    });
-    }
-
 function TestPage2()  {
     const history = useHistory();
     const [memes, setMemes] = useState([])
@@ -40,7 +31,6 @@ function TestPage2()  {
 
             <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = "/images/modenProblems.jpg" text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} />
             <OptionsPage options = {options} setOptions = {setOptions} /> 
-             <button onClick = {() => renderImage()} >Render</button>
             <button onClick = {Twitter}>Twitter</button>
             <img id = "resultImage" alt = "result will render here" />
             <button onClick={handleClick}>Switch to page 3</button>
