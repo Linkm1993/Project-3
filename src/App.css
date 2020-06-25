@@ -22,13 +22,21 @@ body {
   color: white;
 }
 
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
 Button {
   background: linear-gradient(#333232, #fafafa, #8f8b8b);
   border: 0;
   width: 100px;
   height: 60px;
   font-size: 18px;
-  border-radius: 45%;
+  border-radius: 50%;
   cursor: pointer;
   color: rgb(12, 12, 12);
   font-weight: bold;
@@ -36,6 +44,7 @@ Button {
   transition: 0.3s linear;
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-right: 10px;
   display: inline-block;
   text-decoration: none;
 }
