@@ -1,22 +1,43 @@
 .App {
   text-align: center;
-  background: linear-gradient(#abb1b6) ;
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(./Canva\ -\ Jack\ Skelington\ Vinyl\ Figure\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h2 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  text-transform: uppercase;
+  
+}
+
+.h3 {
+  color: white;
 }
 
 Button {
-  background: rgb(7, 79, 112);
+  background: linear-gradient(#333232, #fafafa, #8f8b8b);
   border: 0;
   width: 100px;
-  height: 50px;
-  font-size: 15px;
-  border-radius: 50%;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 45%;
   cursor: pointer;
-  color: #fff;
+  color: rgb(12, 12, 12);
   font-weight: bold;
   outline: none;
   transition: 0.3s linear;
   margin-bottom: 20px;
   margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 Button:hover {
@@ -27,10 +48,4 @@ Button:hover {
   background: black;
 }
 
-  .Wcont {
-  color: white;
-  background-color: #081620;
-  padding: 2vw;
-  margin: 2vw;
-  font-size: 3vw;
-  }
+  
