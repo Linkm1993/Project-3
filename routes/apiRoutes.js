@@ -9,7 +9,7 @@ router.get("/memes", (req,res) => {
 })
 
 router.post("/imgur",(request,response) => {
-    let clientId = "959747f55383f95";
+    let clientId = "d3579318805c16f";
     let data = {
         image: 'https://www.serebii.net/Shiny/SM/025.png',
         type: "url",
