@@ -6,7 +6,7 @@ const app = express();
 const apiRoutes = require("./routes/apiRoutes")
 
 // Serve up static assets (usually on heroku)
-  app.use(express.static("build"));
+app.use(express.static("build"));
 
 // Define middleware
 app.use(express.urlencoded({ extended: true }));
