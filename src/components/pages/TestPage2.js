@@ -2,14 +2,8 @@ import React, {useState} from "react";
 import Canvas from "../Canvas/Canvas";
 import API from "../../utils/api"
 import {GalleryList, GalleryListItem} from "../GalleryList"
-<<<<<<< HEAD
-import Upload from "../Upload";
-import Twitter from "react-twitter-auth";
-import html2canvas from "html2canvas";
-=======
 import Upload from "../Upload"
 import Twitter from "react-twitter-auth"
->>>>>>> master
 import OptionsPage from "../Canvas/Options"
 
 function TestPage2()  {
@@ -30,7 +24,7 @@ function TestPage2()  {
         <div className="App">
 
             <h3>Make your own Memos </h3>
-            <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = {image} text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} />
+            <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = {image} text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} saturation = {options.saturation} blur = {options.blur} invert = {options.invert}/>
             <OptionsPage options = {options} setOptions = {setOptions} /> 
             <button onClick = {Twitter}>Twitter</button>
             <img id = "resultImage" alt = "result will render here" />
