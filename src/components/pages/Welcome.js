@@ -16,11 +16,12 @@ function Welcome()  {
         <div className="Wcont">
             <Title class="h2" level={2}>Meme myself and I app!</Title>
             <Title class="h3" level={3}>Create Download Share!</Title>
-            <Button shape="round" onClick={handleClick}>Get Started</Button>
+            <Button className="button" type="primary" onClick={handleClick}>Get Started</Button>
             <Captcah />
         </div>
     );
-}
+
+    }
 
 export default Welcome;
 
