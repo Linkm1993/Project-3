@@ -52,7 +52,7 @@ function TestPage2()  {
             </GalleryList>
         )}
 
-        <Upload />
+        <Upload setOptions = {setOptions} />
         </div>
     );
 }
