@@ -7,7 +7,6 @@ import './App.css';
 import Wrapper from "../src/components/Wrapper";
 import Welcome from "../src/components/pages/Welcome";
 import TestPage2 from "../src/components/pages/TestPage2";
-import TestPage3 from "../src/components/pages/TestPage3";
 
 function App() {  
   return (
@@ -16,7 +15,6 @@ function App() {
         <Wrapper>
           <Route exact path="/" component={Welcome} />
           <Route exact path="/testpage2" component={TestPage2} />
-          <Route exact path="/testpage3" component={TestPage3} />
         </Wrapper>
         </div>
     </Router>
