@@ -1,7 +1,8 @@
 import React from "react";
+import Options from "../Canvas/Options";
 // import ReactDOM from "react-dom"
 
-function Upload(){
+function Upload({setOptions}){
     
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const uploadedImage = React.useRef(null);
@@ -15,6 +16,7 @@ function Upload(){
             current.file = file;
             reader.onload = (event) => {
                 current.src = event.target.result;
+                setOptions(event.target.result)
             }
             reader.readAsDataURL(file);
         }
