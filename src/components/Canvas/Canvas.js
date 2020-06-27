@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import html2canvas from 'html2canvas';
+import API from '../../utils/api'
 
 const renderImage = (action) => {
     html2canvas(document.getElementById('capture'))
@@ -10,8 +11,7 @@ const renderImage = (action) => {
             a.href = pngFile;
             a.click();
         } else if (action === 'share') {
-            console.log('shared to twitter');
-            // stuff to twitter
+            API.postImgur()
         }
 
     })
