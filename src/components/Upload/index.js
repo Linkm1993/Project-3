@@ -1,5 +1,4 @@
 import React from "react";
-import Options from "../Canvas/Options";
 // import ReactDOM from "react-dom"
 
 function Upload({setOptions}){
