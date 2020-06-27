@@ -15,6 +15,13 @@ export default ({options, setOptions}) => {
             <br /> Size: <input type="range" min="12" max="100" style = {{width: '70%'}}value={options.textSize2} onChange = {(e) => setOptions({...options, textSize2: e.target.value})} />
             <br /> Position: <input type="range" min="0" max="100" style = {{width: '70%'}}value={options.textPosition2} onChange = {(e) => setOptions({...options, textPosition2: e.target.value})} />
             </div>
+
+            <div id = 'imagediv' style = {{backgroundColor: 'rgba(0,0,0,.4)', padding: '5px', borderRadius: '5px', marginTop: '5px'}}>
+                <strong>Image Options:</strong>
+                <br /> Saturation: <input type="range" min="0" max="4" style = {{width: '70%'}}value={options.saturation} onChange = {(e) => setOptions({...options, saturation: e.target.value})} />
+                <br /> Blur: <input type="range" min="0" max="10" style = {{width: '70%'}}value={options.blur} onChange = {(e) => setOptions({...options, blur: e.target.value})} />
+                <br /> Invert: <input type="range" min="0" max="100" style = {{width: '70%'}}value={options.invert} onChange = {(e) => setOptions({...options, invert: e.target.value})} />
+            </div>
         </div>
     )
 }
