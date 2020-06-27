@@ -16,7 +16,7 @@ An app that lets users overlay text onto images, renders said output to be downl
 * [Usage](#Usage) 
 * [Contributing](#Contributing) 
 * [License](#License) 
-* [Technologies](#Technologies Implemented)
+* [Technologies](#Technologies)
             
         
 ## Installation
@@ -53,6 +53,15 @@ npm start
 * Express
 * Ant Design
 * Memes API
+
+## Breakdown of Roles by Member
+
+Nate - Database Setup, Upload Script
+Regina - Twitter Research, Front-End, Ant Design Research
+Kenneth - Canvas, HTML2Canvas, Raw Image Data,
+Matt - Express, Recaptcha, Imgur & Twitter Research
+Alex - Wireframes, Models, PM, Page Routing, Twitter Research
+
 
 ## Future Updates
             
