@@ -4,13 +4,12 @@ import API from "../../utils/api"
 import {GalleryList, GalleryListItem} from "../GalleryList"
 import Upload from "../Upload"
 import Twitter from "react-twitter-auth"
-import html2canvas from "html2canvas";
 import OptionsPage from "../Canvas/Options"
 
 function TestPage2()  {
 
     const [memes, setMemes] = useState([])
-    const [options, setOptions] = useState({text1: "Going on a trip", textPosition1: 0, textColor1: "#FFFFFF", textSize1: 16, text2: "", textPosition2: 0, textColor2: "#FFFFFF", textSize2: 16}) 
+    const [options, setOptions] = useState({text1: "Going on a trip", textPosition1: 0, textColor1: "#FFFFFF", textSize1: 16, text2: "", textPosition2: 0, textColor2: "#FFFFFF", textSize2: 16, saturation: 1, blur: 0, invert: 0}) 
     const [image, setImage] = useState("/images/modenProblems.jpg")
   
 
@@ -23,6 +22,7 @@ function TestPage2()  {
     }
     return (
         <div className="App">
+
             <h3>Make your own Memos </h3>
             <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = {image} text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} />
             <OptionsPage options = {options} setOptions = {setOptions} /> 
