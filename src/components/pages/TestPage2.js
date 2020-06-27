@@ -2,14 +2,8 @@ import React, {useState} from "react";
 import Canvas from "../Canvas/Canvas";
 import API from "../../utils/api"
 import {GalleryList, GalleryListItem} from "../GalleryList"
-<<<<<<< HEAD
-import Upload from "../Upload";
-import Twitter from "react-twitter-auth";
-import html2canvas from "html2canvas";
-=======
 import Upload from "../Upload"
 import Twitter from "react-twitter-auth"
->>>>>>> master
 import OptionsPage from "../Canvas/Options"
 
 function TestPage2()  {
