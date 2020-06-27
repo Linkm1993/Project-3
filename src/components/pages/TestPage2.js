@@ -52,11 +52,7 @@ function TestPage2()  {
             </GalleryList>
         )}
 
-<<<<<<< HEAD
-        <Upload  />
-=======
         <Upload setOptions = {setImage} />
->>>>>>> master
         </div>
     );
 }
