@@ -16,7 +16,7 @@ function Upload({setOptions}){
             current.file = file;
             reader.onload = (event) => {
                 current.src = event.target.result;
-                setOptions({...Options, image: event.target.result})
+                setOptions(event.target.result)
             }
             reader.readAsDataURL(file);
         }
