@@ -1,68 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Meme Myself, and I
 
-## Available Scripts
+## Description
+            
+An app that lets users overlay text onto images, renders said output to be downloaded to user’s device or uploaded to social media.
 
-In the project directory, you can run:
 
-### `npm start`
+![](public/img/screen-project.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Deployed app: 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+            
+## Table of Contents
+            
+* [Installation](#Installation)
+* [Usage](#Usage) 
+* [Contributing](#Contributing) 
+* [License](#License) 
+* [Technologies](#Technologies)
+            
+        
+## Installation
+            
+**Step 1 - Clone my repo using the command line below.**
+```
+git clone https://github.com/Linkm1993/Project-3.git
+```
+**Step 2 - Change directory to the cloned repo folder.**
+```
+cd Project-3
+```
+**Step 3 - Install all required NPM packages.**
+```
+npm install 
+```
+**Step 4 - Start the application server using the command line below**
+```
+npm start
 
-### `npm test`
+```
+            
+## Usage
+            
+npm start
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Implemented
 
-### `npm run build`
+* React js
+* MongoDB
+* Twitter API
+* Heroku
+* Node.js
+* Express
+* Ant Design
+* Memes API
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Breakdown of Roles by Member
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Nate - Database Setup, Upload Script
+Regina - Twitter Research, Front-End, Ant Design Research
+Kenneth - Canvas, HTML2Canvas, Raw Image Data,
+Matt - Express, Recaptcha, Imgur & Twitter Research
+Alex - Wireframes, Models, PM, Page Routing, Twitter Research
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Future Updates
+            
+            
+## Contributing
+            
+[![](https://img.shields.io/badge/gitHub-kdeguzm3-purple?style=plastic)](https://www.github.com/kdeguzm3) | 
+[![](https://img.shields.io/badge/email-cosplaydiver@gmail.com-purple?style=plastic)](mailto:cosplaydiver@gmail.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![](https://img.shields.io/badge/gitHub-Antidetka-pink?style=plastic)](https://www.github.com/Antidetka) | 
+[![](https://img.shields.io/badge/email-musovirova@yahoo.com-pink?style=plastic)](mailto:musovirova@yahoo.com)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![](https://img.shields.io/badge/gitHub-altays-blue?style=plastic)](https://www.github.com/altays) | 
+[![](https://img.shields.io/badge/email-altays633@gmail.com-blue?style=plastic)](mailto:altays633@gmail.com)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[![](https://img.shields.io/badge/gitHub-nrlong-yellow?style=plastic)](https://www.github.com/nrlong) | 
+[![](https://img.shields.io/badge/email-nrlong13@gmail.com-yellow?style=plastic)](mailto:nrlong13@gmail.com)
+ 
+ 
+## License
+            
+MIT
+          
+            
+## Questions
+            
+[![](https://img.shields.io/badge/gitHub-Linkm1993-green?style=plastic)](https://www.github.com/Linkm1993) | 
+[![](https://img.shields.io/badge/email-Linkm1993@gmail.com-green?style=plastic)](mailto:Linkm1993@gmail.com)

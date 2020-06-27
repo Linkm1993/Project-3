@@ -1,25 +1,42 @@
-.App {
-  text-align: center;
-  font-family: "montserrat", sans-serif;
-}
 
 body {
   margin: 0;
   padding: 0;
-  background: url(./Canva\ -\ Jack\ Skelington\ Vinyl\ Figure\ \(3\).jpg);
+  font-family: "montserrat", sans-serif;
+  background-image: linear-gradient(125deg, #6a89cc, #b8e994);
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.h2 {
-  color: white;
-  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-  text-transform: uppercase;
+  min-height: 100vh;
   
 }
 
+.Wcont {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #343434;
+}
+
+.h2 {
+  font-size: 65px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 3px;
+  background: url(./Canva\ -\ Jack\ Skelington\ Vinyl\ Figure\ \(3\).jpg) center no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .h3 {
-  color: white;
+  text-decoration: none;
+  color: #f1452baa;
+  padding: 12px 24px;
+  font-size: 30px;
+  display: inline-block;
+  border-radius: 25px;
+  text-transform: uppercase;
+
 }
 
 p {
@@ -30,31 +47,53 @@ h1 {
   color: white;
 }
 
-Button {
-  background: linear-gradient(#333232, #fafafa, #8f8b8b);
+.button, .Route {
   border: 0;
-  width: 100px;
+  width: 200px;
   height: 60px;
-  font-size: 18px;
-  border-radius: 50%;
+  font-size: 20px;
+  background: #809fe0;
+ 
+  border:4px solid rgb(153, 230, 243);
+  transform: translate(-50%,-50%);
   cursor: pointer;
   color: rgb(12, 12, 12);
   font-weight: bold;
-  outline: none;
   transition: 0.3s linear;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-right: 10px;
   display: inline-block;
   text-decoration: none;
+  margin-top: 15px;
+  position: relative;
 }
 
-Button:hover {
-  opacity: .5;
+.button::before, .button::after, .Route::before, .Route::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: red;
+  transform: skewX(50deg);
+  transition: .4s linear;
+
 }
 
-.recatpcha {
-  background: black;
+.button::before, .Route::before {
+  top: -4px;
+  left: 10%;
 }
+
+.button:hover::before, .Route:hover::before {
+  left: 80%;
+}
+
+.button:hover::after, .Route:hover::after {
+  right: 80%;
+}
+.button::after, .Route::after {
+  bottom: -4px;
+  right: 10%;
+
+}
+
 
   
