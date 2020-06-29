@@ -2,7 +2,7 @@ import React from 'react';
 
 export default ({ options, setOptions }) => {
 	return (
-		<div id="Options" style={{ margin: '5px auto', width: '414px' }}>
+		<div id="Options">
 			<div id="text1div" className="textOptionsDiv">
 				<input
 					type="text"
