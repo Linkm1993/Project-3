@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "html2canvas": "^1.0.0-rc.5",
     "mongoose": "^5.9.19",
+    "rc-tween-one": "^2.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-recaptcha": "^2.3.10",
