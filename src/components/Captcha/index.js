@@ -16,6 +16,7 @@ class Captcha extends Component {
 
   recaptchaLoaded() {
     console.log('Captcha is running!');
+    this.populateLocalStorage()
   }
 
   handleSubmit() {
@@ -32,6 +33,11 @@ class Captcha extends Component {
         isVerified: true
       })
     }
+  }
+
+  // helper function to create value in local storage
+  populateLocalStorage(){
+    localStorage.setItem("verified","true");
   }
 
   render() {
