@@ -21,12 +21,9 @@ function TestPage2()  {
             .catch(err => console.log(err))
     }
     return (
-        <div className="App">
-
-            <h3>Make your own Memos </h3>
-            <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = {image} text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} saturation = {options.saturation} blur = {options.blur} invert = {options.invert}/>
-            <OptionsPage options = {options} setOptions = {setOptions} /> 
-            <button onClick = {Twitter}>Twitter</button>
+        <div className="App" style = {{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+            <div className = 'gallery' style = {{width: "414px"}}>            
+                <button onClick = {Twitter}>Twitter</button>
             <img id = "resultImage" alt = "result will render here" />
             <button onClick={handleMemes}>Load Memes</button>
         {!memes.length ? ( 
@@ -45,7 +42,11 @@ function TestPage2()  {
             </GalleryList>
         )}
 
-        <Upload setOptions = {setImage} />
+        <Upload setOptions = {setImage} /></div>
+
+            <Canvas textSize1 = {options.textSize1} textPosition1 = {options.textPosition1} image = {image} text1 = {options.text1} textColor1 = {options.textColor1} textSize2 = {options.textSize2} textPosition2 = {options.textPosition2} text2 = {options.text2} textColor2 = {options.textColor2} saturation = {options.saturation} blur = {options.blur} invert = {options.invert}/>
+            <OptionsPage options = {options} setOptions = {setOptions} /> 
+
         </div>
     );
 }
