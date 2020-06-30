@@ -6,6 +6,6 @@ export default {
   },
 
   postImgur: function() {
-    return axios.post("api/imgur");
+    return axios.post("/api/insert");
   }
 };
