@@ -67,6 +67,7 @@ Button, .button, .Route {
   position: fixed;
 }
 
+
 Button::before, Button::after, .button::before, .button::after, .Route::before, .Route::after {
   content: "";
   position: absolute;
@@ -98,4 +99,3 @@ Button::after, .button::after, .Route::after {
 .textLayer {
   text-align: center;
 }
-
