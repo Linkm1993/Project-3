@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import Canvas from "../Canvas/Canvas";
 import API from "../../utils/api"
 import {GalleryList, GalleryListItem} from "../GalleryList"
-import Upload from "../Upload"
-import Twitter from "react-twitter-auth"
+import Upload from "../Upload";
+import Twitter from "react-twitter-auth";
+import html2canvas from "html2canvas";
 import OptionsPage from "../Canvas/Options"
 
 function TestPage2()  {
@@ -28,6 +29,7 @@ function TestPage2()  {
             <OptionsPage options = {options} setOptions = {setOptions} /> 
             <button onClick = {Twitter}>Twitter</button>
             <img id = "resultImage" alt = "result will render here" />
+            <button>Save</button>
             <button onClick={handleMemes}>Load Memes</button>
         {!memes.length ? ( 
             <h1> No Memes to Display</h1>
