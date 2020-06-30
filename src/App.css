@@ -48,11 +48,18 @@ h1 {
   color:yellow;
 }
 
+#Options {
+  background-color: #809fe0;
+  width: 400px;
+  right: 300;
+  left:500
+}
+
 Button, .button, .Route {
   font-family: 'montserrat', sans-serif;
   border-radius: 25px;
-  width: 200px;
-  height: 60px;
+  width: 150px;
+  height: 50px;
   font-size: 25px;
   background: #809fe0;
   border:4px solid rgb(153, 230, 243);
