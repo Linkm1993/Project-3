@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import Captcah from "../Captcha";
 import { Typography,Button } from 'antd';
+import Design from '../Design';
 
 function Welcome()  {
     const history = useHistory();
@@ -14,6 +15,7 @@ function Welcome()  {
 
     return (
         <div className="Wcont">
+            <Design />
             <Title class="h2" level={2}>Meme myself and I app!</Title>
             <Title class="h3" level={3}>Create <span>Download</span> <span className="yellow">Share!</span></Title>
             <Button className="GetStartedb" type="primary" onClick={handleClick}>Get Started</Button>
