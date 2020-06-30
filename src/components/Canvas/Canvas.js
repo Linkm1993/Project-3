@@ -1,11 +1,6 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
-
-import API from '../../utils/api'
 import axios from 'axios'
-import { type } from 'os';
-const assert = require('assert');
-const fs = require('fs');
 
 const renderImage = (action) => {
     html2canvas(document.getElementById('capture'))
@@ -19,8 +14,9 @@ const renderImage = (action) => {
             axios.post("/api/insert",{
                 image : pngFile
             })
-        }
-
+		}
+	})
+}
 
 export default ({
 	image,
