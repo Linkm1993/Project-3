@@ -20,23 +20,39 @@ router.get("/memes", (req,res) => {
 })
 
 router.post("/insert",(req,res) => {
+    db.MemeTemp.create({
+        title: 'Hello',
+            image: req.body.image
+    })
+    .then(console.log())
+    .catch(err => res.status(422).end())
 
-    client.connect(function(error) {
-    assert.ifError(error);
 
-    const db = client.db(dbName);
 
-    var bucket = new mongodb.GridFSBucket(db);
 
-    fs.createReadStream('./public/images/surprisedPika.jpg').
-        pipe(bucket.openUploadStream('surprisedPika.jpg')).
-        on('error', function(error) {
-        assert.ifError(error);
-        }).
-        on('finish', function() {
-        console.log('done!');
-        process.exit(0);
-        });
+
+
+
+
+
+
+
+    // client.connect(function(error) {
+    // assert.ifError(error);
+
+    // const db = client.db(dbName);
+
+    // var bucket = new mongodb.GridFSBucket(db);
+
+    // fs.createReadStream('./public/images/surprisedPika.jpg').
+    //     pipe(bucket.openUploadStream('surprisedPika.jpg')).
+    //     on('error', function(error) {
+    //     assert.ifError(error);
+    //     }).
+    //     on('finish', function() {
+    //     console.log('done!');
+    //     process.exit(0);
+    //     });
 });
 
 
@@ -58,6 +74,5 @@ router.post("/insert",(req,res) => {
     // }).catch(function(error) {
     //     console.log(error);
     // });
-})
 
 module.exports = router;

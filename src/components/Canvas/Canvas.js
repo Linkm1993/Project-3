@@ -3,6 +3,8 @@ import html2canvas from 'html2canvas';
 import API from '../../utils/api'
 import axios from 'axios'
 import { type } from 'os';
+const assert = require('assert');
+const fs = require('fs');
 
 const renderImage = (action) => {
     html2canvas(document.getElementById('capture'))
@@ -13,7 +15,9 @@ const renderImage = (action) => {
             a.href = pngFile;
             a.click();
         } else if (action === 'share') {
-            axios.post('/api/insert')
+            axios.post("/api/insert",{
+                image : pngFile
+            })
         }
 
     })
