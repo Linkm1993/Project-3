@@ -1,44 +1,91 @@
-import React, {useState} from 'react';
+import React from 'react';
 import html2canvas from 'html2canvas';
-import API from '../../utils/api'
+import API from '../../utils/api';
 
 const renderImage = (action) => {
-    html2canvas(document.getElementById('capture'))
-    .then (data => {
-        let pngFile = data.toDataURL(); 
-        if (action === 'save') {
-            let a = document.getElementById('downloader'); // For the user to be able to download result image
-            a.href = pngFile;
-            a.click();
-        } else if (action === 'share') {
-            API.postImgur()
-        }
+	html2canvas(document.getElementById('canvas')).then((data) => {
+		let pngFile = data.toDataURL();
+		if (action === 'save') {
+			let a = document.getElementById('downloader'); // For the user to be able to download result image
+			a.href = pngFile;
+			a.click();
+		} else if (action === 'share') {
+			API.postImgur();
+		}
+	});
+};
 
-    })
-}
+export default ({
+	image,
+	text1,
+	textPosition1,
+	textColor1,
+	textSize1,
+	text2,
+	textPosition2,
+	textColor2,
+	textSize2,
+	saturation,
+	blur,
+	invert
+}) => {
+	return (
+		<div className="canvasContainer">
+			<div id="canvas" className="canvas" style={{ position: 'relative', height: '310px', width: '414px' }}>
+				<div
+					id="imagelayer"
+					className="imageLayer"
+					style={{
+						position: 'absolute',
+						top: 0,
+						left: 0,
+						right: 0,
+						bottom: 0,
+						backgroundImage: `url(${image})`,
+						filter: `saturate(${saturation}) blur(${blur}px) invert(${invert}%)`,
+						backgroundSize: 'cover',
+						zIndex: '1'
+					}}
+				/>
+				<div /* div for text 1 */
+					className="textLayer textLayer1"
+					style={{
+						position: 'absolute',
+						left: 0,
+						right: 0,
+						top: `${textPosition1}%`,
+						color: `${textColor1}`,
+						fontWeight: 'bolder',
+						fontSize: `${textSize1}px`,
+						zIndex: '2'
+					}}
+				>
+					{text1}
+				</div>
+				<div /* div for text 2 */
+					className="textLayer textLayer2"
+					style={{
+						position: 'absolute',
+						left: 0,
+						right: 0,
+						top: `${textPosition2}%`,
+						color: `${textColor2}`,
+						fontWeight: 'bolder',
+						fontSize: `${textSize2}px`,
+						zIndex: '2'
+					}}
+				>
+					{text2}
+				</div>
+			</div>
 
-
-export default ({image, text1, textPosition1, textColor1, textSize1, text2, textPosition2,textColor2,textSize2, saturation, blur, invert}) => {
-
-    const [shareSave, setShareSave] = useState("hidden")
-
-    return (
-        <div id = "canvas" className = "canvas" style = {{position: "relative", height: "310px", width: "414px", margin: "0 auto"}}>
-            <div id = 'capture' className = "imageLayer" style = {{position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundImage: `url(${image})`, filter: `saturate(${saturation}) blur(${blur}px) invert(${invert}%)`, backgroundSize: "cover", zIndex: "1"}} onClick = {e => setShareSave("visible")}>
-            </div>
-                <div className = "textLayer" style = {{position: "absolute", left: 0, right: 0, top: `${textPosition1}%`, color: `${textColor1}`, fontWeight: "bolder", fontSize: `${textSize1}px`, zIndex: "99"}}>
-                    {text1}
-                </div>
-                <div className = "textLayer" style = {{position: "absolute", left: 0, right: 0, top: `${textPosition2}%`, color: `${textColor2}`, fontWeight: "bolder", fontSize: `${textSize2}px`, zIndex: "99"}}>
-                    {text2}
-                </div>
-            
-        <div id = "canvasOptions" style = {{position: "absolute", top: 0, bottom: 0, left: 0, right: 0, backgroundColor: "rgba(0,0,0,0.8)", visibility: shareSave, zIndex: 3}}>
-            
-            <p style = {{color: "white", fontWeight: "bolder", marginTop: "30%"}} onClick = {e =>setShareSave("hidden")}>X</p>
-            <button onClick = {e => renderImage('share')}>Share</button><button onClick = {e => renderImage('save')}>Save</button>
-            <a id = 'downloader' href = '#canvas' download style = {{ visibility: 'hidden', width: 0, height: 0}}>download</a>
-        </div>
-        </div>
-    )
-} 
+			<div id="shareSave">
+				<button onClick={(e) => renderImage('share')}>Share</button>
+				<button onClick={(e) => renderImage('save')}>Save</button>
+				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
+					download
+				</a>
+			</div>
+		</div>
+	);
+};
