@@ -1,6 +1,7 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
 import API from '../../utils/api';
+import axios from 'axios';
 
 const renderImage = (action) => {
 	html2canvas(document.getElementById('canvas')).then((data) => {
@@ -10,7 +11,9 @@ const renderImage = (action) => {
 			a.href = pngFile;
 			a.click();
 		} else if (action === 'share') {
-			API.postImgur();
+			axios.post("/api/insert",{
+				image : pngFile
+			})
 		}
 	});
 };
