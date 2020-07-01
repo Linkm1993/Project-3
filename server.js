@@ -18,6 +18,8 @@ mongoose.connect(
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 );
 
+
+
 //use api route
 app.use("/api",apiRoutes)
 

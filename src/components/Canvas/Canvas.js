@@ -1,5 +1,6 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
+
 import API from '../../utils/api';
 import axios from 'axios';
 
@@ -15,8 +16,8 @@ const renderImage = (action) => {
 				image : pngFile
 			})
 		}
-	});
-};
+	})
+}
 
 export default ({
 	image,
