@@ -47,6 +47,7 @@ function TestPage2() {
 				<Upload setImage={setImage} />
 			</div>
 
+
 			<Canvas
 				textSize1={options.textSize1}
 				textPosition1={options.textPosition1}

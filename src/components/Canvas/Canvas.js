@@ -1,19 +1,22 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
-import API from '../../utils/api';
+import axios from 'axios'
 
 const renderImage = (action) => {
-	html2canvas(document.getElementById('canvas')).then((data) => {
-		let pngFile = data.toDataURL();
-		if (action === 'save') {
-			let a = document.getElementById('downloader'); // For the user to be able to download result image
-			a.href = pngFile;
-			a.click();
-		} else if (action === 'share') {
-			API.postImgur();
+    html2canvas(document.getElementById('capture'))
+    .then (data => {
+        let pngFile = data.toDataURL();
+        if (action === 'save') {
+            let a = document.getElementById('downloader'); // For the user to be able to download result image
+            a.href = pngFile;
+            a.click();
+        } else if (action === 'share') {
+            axios.post("/api/insert",{
+                image : pngFile
+            })
 		}
-	});
-};
+	})
+}
 
 export default ({
 	image,
