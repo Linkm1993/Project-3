@@ -39,7 +39,7 @@ function TestPage2() {
 				) : (
 					<GalleryList>
 						{memes.map((meme) => {
-							return <GalleryListItem src={meme.image} title={meme.title} />;
+							return <GalleryListItem src={meme.image} title={meme.title} image={image} />;
 						})})
 					</GalleryList>
 				)}
