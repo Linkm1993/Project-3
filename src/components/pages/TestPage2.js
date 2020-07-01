@@ -6,6 +6,7 @@ import Upload from '../Upload';
 import Twitter from 'react-twitter-auth';
 import OptionsPage from '../Canvas/Options';
 
+
 function TestPage2() {
 	const [ memes, setMemes ] = useState([]);
 	const [ options, setOptions ] = useState({
@@ -28,6 +29,10 @@ function TestPage2() {
 		console.log('Handling Memes');
 		API.getMemes().then((res) => setMemes(res.data)).catch((err) => console.log(err));
 	};
+
+	const handleClick = (e) => {
+		setImage(e.target.src)
+	}	
 	return (
 		<div className="App">
 			<div className="gallery" style={{ width: '414px' }}>
@@ -39,7 +44,7 @@ function TestPage2() {
 				) : (
 					<GalleryList>
 						{memes.map((meme) => {
-							return <GalleryListItem src={meme.image} title={meme.title} />;
+							return <GalleryListItem src={meme.image} title={meme.title} image={image} handleClick={handleClick} />;
 						})})
 					</GalleryList>
 				)}
