@@ -84,8 +84,8 @@ export default ({
 			</div>
 
 			<div id="shareSave">
-				<button onClick={(e) => renderImage('share')}>Share</button>
-				<button onClick={(e) => renderImage('save')}>Save</button>
+				<button onClick={(e) => renderImage('share')}>Save to DB</button>
+				<button onClick={(e) => renderImage('save')}>Download</button>
 				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
 					download
 				</a>

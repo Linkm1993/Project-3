@@ -57,7 +57,7 @@ function Upload({ setImage }) {
 				/>
 			</div>
 
-			<button onClick={() => imageUploader.current.click()}>click here</button>
+			<button onClick={() => imageUploader.current.click()}>Upload Image</button>
 		</div>
 	);
 }
