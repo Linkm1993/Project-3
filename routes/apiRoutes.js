@@ -19,7 +19,9 @@ router.get("/memes", (req,res) => {
 router.post("/insert",(req,res) => {
     db.MemeTemp.create({
         title: 'Hello',
-            image: req.body.image
+
+        image: req.body.image
+
     })
     .then(console.log())
     .catch(err => res.status(422).end())

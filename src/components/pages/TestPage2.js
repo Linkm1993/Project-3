@@ -3,7 +3,6 @@ import Canvas from '../Canvas/Canvas';
 import API from '../../utils/api';
 import { GalleryList, GalleryListItem } from '../GalleryList';
 import Upload from '../Upload';
-import Twitter from 'react-twitter-auth';
 import OptionsPage from '../Canvas/Options';
 
 function TestPage2() {
@@ -23,24 +22,25 @@ function TestPage2() {
 	});
 	const [ image, setImage ] = useState('/images/modenProblems.jpg');
 
-	const handleMemes = (event) => {
-		event.preventDefault();
+	window.onload = function handleMemes() {
 		console.log('Handling Memes');
 		API.getMemes().then((res) => setMemes(res.data)).catch((err) => console.log(err));
 	};
+
+	const handleClick = (e) => {
+		setImage(e.target.src)
+	}
+		
 	return (
 		<div className="App">
 			<div className="gallery" style={{ width: '414px' }}>
-				<button onClick={Twitter}>Twitter</button>
-				<img id="resultImage" alt="result will render here" />
-				<button onClick={handleMemes}>Load Memes</button>
 				{!memes.length ? (
 					<h1> No Memes to Display</h1>
 				) : (
 					<GalleryList>
 						{memes.map((meme) => {
-							return <GalleryListItem src={meme.image} title={meme.title} />;
-						})})
+							return <GalleryListItem src={meme.image} title={meme.title} image={image} handleClick={handleClick} />;
+						})}
 					</GalleryList>
 				)}
 

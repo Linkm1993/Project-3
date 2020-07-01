@@ -1,19 +1,20 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
-import axios from 'axios'
+
+import API from '../../utils/api';
+import axios from 'axios';
 
 const renderImage = (action) => {
-    html2canvas(document.getElementById('capture'))
-    .then (data => {
-        let pngFile = data.toDataURL();
-        if (action === 'save') {
-            let a = document.getElementById('downloader'); // For the user to be able to download result image
-            a.href = pngFile;
-            a.click();
-        } else if (action === 'share') {
-            axios.post("/api/insert",{
-                image : pngFile
-            })
+	html2canvas(document.getElementById('canvas')).then((data) => {
+		let pngFile = data.toDataURL();
+		if (action === 'save') {
+			let a = document.getElementById('downloader'); // For the user to be able to download result image
+			a.href = pngFile;
+			a.click();
+		} else if (action === 'share') {
+			axios.post("/api/insert",{
+				image : pngFile
+			})
 		}
 	})
 }
@@ -83,8 +84,8 @@ export default ({
 			</div>
 
 			<div id="shareSave">
-				<button onClick={(e) => renderImage('share')}>Share</button>
-				<button onClick={(e) => renderImage('save')}>Save</button>
+				<button onClick={(e) => renderImage('share')}>Save to DB</button>
+				<button onClick={(e) => renderImage('save')}>Download</button>
 				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
 					download
 				</a>

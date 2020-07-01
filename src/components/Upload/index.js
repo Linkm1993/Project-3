@@ -38,7 +38,7 @@ function Upload({ setImage }) {
 					display: 'none'
 				}}
 			/>
-			<div
+			{/* <div
 				style={{
 					height: '60px',
 					width: '60px',
@@ -55,9 +55,9 @@ function Upload({ setImage }) {
 						position: 'relative'
 					}}
 				/>
-			</div>
+			</div> */}
 
-			<button onClick={() => imageUploader.current.click()}>click here</button>
+			<button onClick={() => imageUploader.current.click()}>Upload Image</button>
 		</div>
 	);
 }
