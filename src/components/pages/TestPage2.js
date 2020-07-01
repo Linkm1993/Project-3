@@ -22,8 +22,7 @@ function TestPage2() {
 	});
 	const [ image, setImage ] = useState('/images/modenProblems.jpg');
 
-	const handleMemes = (event) => {
-		event.preventDefault();
+	window.onload = function handleMemes() {
 		console.log('Handling Memes');
 		API.getMemes().then((res) => setMemes(res.data)).catch((err) => console.log(err));
 	};
@@ -35,14 +34,13 @@ function TestPage2() {
 	return (
 		<div className="App">
 			<div className="gallery" style={{ width: '414px' }}>
-				<img id="resultImage" alt="result will render here" />
 				{!memes.length ? (
 					<h1> No Memes to Display</h1>
 				) : (
 					<GalleryList>
 						{memes.map((meme) => {
 							return <GalleryListItem src={meme.image} title={meme.title} image={image} handleClick={handleClick} />;
-						})})
+						})}
 					</GalleryList>
 				)}
 
