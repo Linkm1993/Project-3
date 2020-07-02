@@ -1,4 +1,4 @@
-body,
+/* body,
 .Wcont {
 	margin: 0;
 	padding: 0;
@@ -9,18 +9,18 @@ body,
 	text-align: center;
 	width: 100%;
 	top: 50%;
-}
+} */
 
-.h2 {
+/* .h2 {
 	font-size: 65px;
 	margin: 0;
 	font-weight: 900;
 	letter-spacing: 3px;
 	background: url(./Canva\ -\ Jack\ Skelington\ Vinyl\ Figure\ \(3\).jpg) center no-repeat;
 	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-}
-
+	-webkit-background-clip: text; */
+/* } */
+/* 
 .h3 {
 	text-decoration: none;
 	color: #f1452baa;
@@ -29,8 +29,8 @@ body,
 	display: inline-block;
 	border-radius: 25px;
 	text-transform: uppercase;
-}
-
+} */
+/* 
 span {
 	color: rgb(32, 151, 122);
 }
@@ -110,4 +110,4 @@ Button::after,
 
 .textLayer {
 	text-align: center;
-}
+} */
