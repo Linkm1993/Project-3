@@ -65,7 +65,7 @@ export default ({ options, setOptions }) => {
 				/>
 			</div>
 
-			<div id="imagediv" className="imageOptionsDiv">
+			{/* <div id="imagediv" className="imageOptionsDiv">
 				<strong>Image Options:</strong>
 				<br /> Saturation:{' '}
 				<input
@@ -91,7 +91,7 @@ export default ({ options, setOptions }) => {
 					value={options.invert}
 					onChange={(e) => setOptions({ ...options, invert: e.target.value })}
 				/>
-			</div>
+			</div> */}
 		</div>
 	);
 };
