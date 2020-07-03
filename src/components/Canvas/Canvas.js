@@ -1,10 +1,9 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
-
-import API from '../../utils/api';
 import axios from 'axios';
 
 const renderImage = (action) => {
+	window.scrollTo(0, 0);
 	html2canvas(document.getElementById('canvas')).then((data) => {
 		let pngFile = data.toDataURL();
 		if (action === 'save') {
@@ -12,12 +11,12 @@ const renderImage = (action) => {
 			a.href = pngFile;
 			a.click();
 		} else if (action === 'share') {
-			axios.post("/api/insert",{
-				image : pngFile
-			})
+			axios.post('/api/insert', {
+				image: pngFile
+			});
 		}
-	})
-}
+	});
+};
 
 export default ({
 	image,
@@ -28,10 +27,10 @@ export default ({
 	text2,
 	textPosition2,
 	textColor2,
-	textSize2,
-	saturation,
-	blur,
-	invert
+	textSize2
+	// saturation,
+	// blur,
+	// invert
 }) => {
 	return (
 		<div className="canvasContainer">
@@ -46,7 +45,7 @@ export default ({
 						right: 0,
 						bottom: 0,
 						backgroundImage: `url(${image})`,
-						filter: `saturate(${saturation}) blur(${blur}px) invert(${invert}%)`,
+						// filter: `saturate(${saturation}) blur(${blur}px) invert(${invert}%)`,
 						backgroundSize: 'cover',
 						zIndex: '1'
 					}}
