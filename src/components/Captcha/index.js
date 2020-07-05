@@ -21,7 +21,7 @@ class Captcha extends Component {
 
   handleSubmit() {
     if (this.state.isVerified) {
-      window.location.href='/TestPage2'
+      window.location.href='/MainPage'
     } else {
       alert('Be gone bot!');
     }

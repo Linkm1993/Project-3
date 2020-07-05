@@ -4,14 +4,14 @@ import './App.css';
 
 // Components
 import Welcome from "../src/components/pages/Welcome";
-import TestPage2 from "../src/components/pages/TestPage2";
+import MainPage from "../src/components/pages/MainPage";
 
 function renderPages() {
   if (localStorage.getItem("verified") === "true" ) {
     return (
       <Router>
         <Route exact path="/" component={Welcome} />
-        <Route exact path="/testpage2" component={TestPage2} />
+        <Route exact path="/MainPage" component={MainPage} />
       </Router>
 )
   } else {
