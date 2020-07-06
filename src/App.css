@@ -112,3 +112,11 @@ Button::after,
 .textLayer {
 	text-align: center;
 }
+
+/* .textDivOptions {text-align: center;}*/
+
+#top-container {
+	display:flex;
+	justify-content: space-around;
+
+}

@@ -37,7 +37,7 @@ function MainPage() {
 		<div>
 			<Header/>
 			<Wrapper>
-			<div className="container">
+			<div className="container" id="top-container">
 				<div className="row mt-4">
 					{/* canvas component - need to figure out how to center it. Start with Row and work backwards?*/}
 					<div className="col-md-9">
@@ -62,6 +62,9 @@ function MainPage() {
 						<OptionsPage options={options} setOptions={setOptions} />
 					</div>
 				</div>
+			</div>
+			<div className="container">
+				
 				<div className="row mt-4">
 					{/* need to figure out how to center within row/column */}
 					<div className="gallery col-md-12" style={{ width: '414px' }}>
