@@ -84,9 +84,9 @@ export default ({
 			</div>
 
 			<div id="shareSave" aria-label="Canvas Button Group" className="d-flex justify-content-center">
-				<button type="button" class="btn btn-secondary mx-1" onClick={(e) => renderImage('share')}>Save to DB</button>
-				<button type="button" class="btn btn-secondary mx-1" onClick={(e) => renderImage('save')}>Download</button>
-				<button type="button" class="btn btn-secondary mx-1" >Third Button</button>
+				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('share')}>Save to DB</button>
+				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('save')}>Download</button>
+				<button type="button" class="btn btn-secondary mx-2 mt-1" >Third Button</button>
 				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
 					download
 				</a>
