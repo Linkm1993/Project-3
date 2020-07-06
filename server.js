@@ -3,7 +3,9 @@ const path = require("path");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const apiRoutes = require("./routes/apiRoutes")
+const apiRoutes = require("./routes/apiRoutes");
+const registrationRoutes = require('./route');
+const config = require('./DB.js');
 
 // Serve up static assets (usually on heroku)
 app.use(express.static("build"));
@@ -11,6 +13,8 @@ app.use(express.static("build"));
 // Define middleware
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 app.use(express.json({ limit: '50mb' }));
+
+app.use("./schema/User", registrationRoutes);
 
   // Connect to the Mongo DB
 mongoose.connect(
