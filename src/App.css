@@ -69,7 +69,7 @@ Button, .button, .Route {
   transition: 0.3s linear;
   display: inline-block;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 30px;
   position: fixed;
 }
 
