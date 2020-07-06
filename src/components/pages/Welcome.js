@@ -8,7 +8,7 @@ function Welcome()  {
 
     const handleClick = event => {
         event.preventDefault();
-        history.push("/testpage2");
+        history.push("/MainPage");
     }
 
     return (
