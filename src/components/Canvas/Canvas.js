@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import html2canvas from 'html2canvas';
 import axios from 'axios';
+import Uploaded from '../Upload'
+import { Upload } from 'antd';
 
 const renderImage = (action) => {
 	window.scrollTo(0, 0);
@@ -27,7 +29,8 @@ export default ({
 	text2,
 	textPosition2,
 	textColor2,
-	textSize2
+	textSize2,
+	setImage
 	// saturation,
 	// blur,
 	// invert
@@ -85,6 +88,7 @@ export default ({
 			<div id="shareSave">
 				<button onClick={(e) => renderImage('share')}>Save to DB</button>
 				<button onClick={(e) => renderImage('save')}>Download</button>
+				<Uploaded setImage={setImage} />
 				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
 					download
 				</a>
