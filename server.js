@@ -25,12 +25,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("./schema/User", registrationRoutes);
 
-  // Connect to the Mongo DB
+// Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/memeImages",
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 );
-
 
 
 //use api route
