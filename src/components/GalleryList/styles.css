@@ -1,0 +1,12 @@
+/* gallery container styles */
+.gallery-group > .row {
+    overflow-x:auto;
+    white-space:nowrap;
+    flex-wrap:nowrap;
+}
+
+/* gallery item styles */
+.gallery-group > .gallery-row > .col-xs-4{
+    display:inline-block;
+    float:none;
+}

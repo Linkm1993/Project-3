@@ -3,29 +3,32 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 
 // Components
-import Wrapper from "../src/components/Wrapper";
 import Welcome from "../src/components/pages/Welcome";
-import TestPage2 from "../src/components/pages/TestPage2";
+import MainPage from "../src/components/pages/MainPage";
 
 function renderPages() {
   if (localStorage.getItem("verified") === "true" ) {
-    return (<Wrapper>
-      <Route exact path="/" component={Welcome} />
-      <Route exact path="/testpage2" component={TestPage2} />
-    </Wrapper>)
+    return (
+      <Router>
+        <Route exact path="/" component={Welcome} />
+        <Route exact path="/MainPage" component={MainPage} />
+      </Router>
+)
   } else {
-    return (<Route exact path = "/" component={Welcome} />)
+    return (
+      <Router>
+        <Route exact path = "/" component={Welcome} />
+      </Router> 
+    )
   }
 
 }
 
 function App() {  
   return (
-    <Router>
       <div className = "App">
         {renderPages()}
       </div>
-    </Router>
   );
 }
 
