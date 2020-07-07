@@ -17,6 +17,18 @@ const memeSeed = [
     {
         title: "Surprised Pikachu",
         image: "../images/surprisedPika.jpg"
+    },
+    {
+        title: "Kappa",
+        image: "../images/Kappa.png"
+    },
+    {
+        title: "O Rly",
+        image: "../images/oreally.jpg"
+    },
+    {
+        title: "POG Champ",
+        image: "../images/pogChamp.jpg"
     }
 ];
 
