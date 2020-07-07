@@ -13,16 +13,13 @@ function Welcome()  {
 
     return (
         <div className='container'>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div>Meme Myself and I</div>
-            </nav>
             <div className='row d-flex justify-content-center'>
                     <div className='jumbotron'>
                         <h1>Meme, Myself, and I!</h1>
                         <h2>Create, Download, Share</h2>
                         <div className='d-flex justify-content-center'>
                             <div className='col-md-6'>
-           ``                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non tellus lacinia, ultricies magna non, fringilla justo. Nullam ut consequat lacus, a aliquet ex. Cras a nisl finibus, commodo eros at, dictum sapien. Maecenas a elit fringilla mauris pellentesque ornare. Sed quis ligula pellentesque metus euismod lacinia ut vitae lectus. Cras blandit sed risus tristique tempor. Suspendisse bibendum nulla et dapibus pretium. Phasellus fermentum gravida tortor, ut posuere quam ullamcorper a. Integer quis enim lacus. Nulla pharetra ligula at lorem ultricies porttitor.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non tellus lacinia, ultricies magna non, fringilla justo. Nullam ut consequat lacus, a aliquet ex. Cras a nisl finibus, commodo eros at, dictum sapien. Maecenas a elit fringilla mauris pellentesque ornare. Sed quis ligula pellentesque metus euismod lacinia ut vitae lectus. Cras blandit sed risus tristique tempor. Suspendisse bibendum nulla et dapibus pretium. Phasellus fermentum gravida tortor, ut posuere quam ullamcorper a. Integer quis enim lacus. Nulla pharetra ligula at lorem ultricies porttitor.</p>
                             </div>
                             <div className='col-md-6'>
                                 <img src='https://i.redd.it/qblm7745ex921.jpg'></img>
@@ -37,8 +34,6 @@ function Welcome()  {
 
                     </div>
             </div>
-                {/* <button className="GetStartedb btn btn-primary" type="primary" onClick={handleClick}>Get Started</button> */}
-            <div className="footer">footer</div>
         </div>
     );
 
