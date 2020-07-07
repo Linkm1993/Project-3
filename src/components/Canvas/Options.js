@@ -16,6 +16,12 @@ export default ({ options, setOptions }) => {
 					value={options.textColor1}
 					onChange={(e) => setOptions({ ...options, textColor1: e.target.value })}
 				/>
+				<select name="font1" id="font1" onChange={(e) => setOptions({ ...options, font1: e.target.value })}>
+					<option value="fondamento">Fondamento</option>
+					<option value="galada">Galada</option>
+					<option value="montserrat">Montserrat</option>
+					<option value="source">Source Code Pro</option>
+				</select>
 				<br /> Size:{' '}
 				<input
 					type="range"
@@ -47,6 +53,12 @@ export default ({ options, setOptions }) => {
 					value={options.textColor2}
 					onChange={(e) => setOptions({ ...options, textColor2: e.target.value })}
 				/>
+				<select name="font2" id="font2" onChange={(e) => setOptions({ ...options, font2: e.target.value })}>
+					<option value="fondamento">Fondamento</option>
+					<option value="galada">Galada</option>
+					<option value="montserrat">Montserrat</option>
+					<option value="source">Source Code Pro</option>
+				</select>
 				<br /> Size:{' '}
 				<input
 					type="range"

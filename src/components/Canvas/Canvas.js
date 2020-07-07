@@ -1,8 +1,8 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
 import axios from 'axios';
-import Uploaded from '../Upload'
-import { Upload } from 'antd';
+import Uploaded from '../Upload';
+import '../../App.css';
 
 const renderImage = (action) => {
 	window.scrollTo(0, 0);
@@ -23,10 +23,12 @@ const renderImage = (action) => {
 export default ({
 	image,
 	text1,
+	font1,
 	textPosition1,
 	textColor1,
 	textSize1,
 	text2,
+	font2,
 	textPosition2,
 	textColor2,
 	textSize2,
@@ -37,7 +39,14 @@ export default ({
 }) => {
 	return (
 		<div className="canvasContainer">
+<<<<<<< HEAD
 			<div id="canvas" className="canvas" style={{ position: 'relative', height: '310px', width: '414px', margin: '0 auto'}}
+=======
+			<div
+				id="canvas"
+				className="canvas"
+				style={{ position: 'relative', height: '310px', width: '414px', margin: '0 auto' }}
+>>>>>>> master
 			>
 				<div
 					id="imagelayer"
@@ -55,7 +64,7 @@ export default ({
 					}}
 				/>
 				<div /* div for text 1 */
-					className="textLayer textLayer1"
+					className={`textLayer textLayer1 ${font1}`}
 					style={{
 						position: 'absolute',
 						left: 0,
@@ -70,7 +79,7 @@ export default ({
 					{text1}
 				</div>
 				<div /* div for text 2 */
-					className="textLayer textLayer2"
+					className={`textLayer textLayer1 ${font2}`}
 					style={{
 						position: 'absolute',
 						left: 0,
@@ -87,8 +96,12 @@ export default ({
 			</div>
 
 			<div id="shareSave" aria-label="Canvas Button Group" className="d-flex justify-content-center">
-				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('share')}>Save to DB</button>
-				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('save')}>Download</button>
+				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('share')}>
+					Save to DB
+				</button>
+				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('save')}>
+					Download
+				</button>
 				<Uploaded setImage={setImage} />
 				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
 					download
