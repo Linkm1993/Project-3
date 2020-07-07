@@ -45,6 +45,7 @@ function MainPage() {
 							textSize1={options.textSize1}
 							textPosition1={options.textPosition1}
 							image={image}
+							setImage={setImage}
 							text1={options.text1}
 							textColor1={options.textColor1}
 							textSize2={options.textSize2}
