@@ -37,7 +37,7 @@ export default ({
 }) => {
 	return (
 		<div className="canvasContainer">
-			<div id="canvas" className="canvas" style={{ position: 'relative', height: '310px', width: '414px', margin: '0 auto' }}
+			<div id="canvas" className="canvas" style={{ position: 'relative', height: '310px', width: '414px', margin: '0 auto'}}
 			>
 				<div
 					id="imagelayer"
@@ -50,7 +50,7 @@ export default ({
 						bottom: 0,
 						backgroundImage: `url(${image})`,
 						// filter: `saturate(${saturation}) blur(${blur}px) invert(${invert}%)`,
-						backgroundSize: 'cover',
+						backgroundSize: '100% 100%',
 						zIndex: '1'
 					}}
 				/>
