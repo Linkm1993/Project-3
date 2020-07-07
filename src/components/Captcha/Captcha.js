@@ -48,8 +48,11 @@ class Captcha extends Component {
             render="explicit"
             onloadCallback={this.recaptchaLoaded}
             verifyCallback={this.verifyCallback}
+            theme="dark"
           />
-        <button className="Route" onClick={this.handleSubscribe}>Verify</button>
+          <div className='d-flex justify-content-center'>
+            <button className="Route btn btn-secondary" onClick={this.handleSubscribe}>Verify</button>
+          </div>
         </div>
     );
   }

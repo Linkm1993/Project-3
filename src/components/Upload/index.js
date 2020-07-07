@@ -19,16 +19,8 @@ function Upload({ setImage }) {
 			reader.readAsDataURL(file);
 		}
 	};
-
 	return (
-		<div
-			style={{
-				display: 'flex',
-				flexDirection: 'column',
-				alignItems: 'center',
-				justifyContent: 'center'
-			}}
-		>
+		<div>
 			<input
 				type="file"
 				accept="image/*"
@@ -38,26 +30,16 @@ function Upload({ setImage }) {
 					display: 'none'
 				}}
 			/>
-			{/* <div
-				style={{
-					height: '60px',
-					width: '60px',
-					border: '2px dashed black'
-				}}
-				// onClick={() => imageUploader.current.click()}
-			>
 				<img
 					alt="upload location"
 					ref={uploadedImage}
 					style={{
-						width: '100%',
-						// height: "60px",
-						position: 'relative'
+						display: 'none'
 					}}
 				/>
-			</div> */}
 
-			<button onClick={() => imageUploader.current.click()}>Upload Image</button>
+			<button type="button" class="btn btn-secondary mx-2 mt-1"
+			onClick={() => imageUploader.current.click()}>Upload Image</button>
 		</div>
 	);
 }
