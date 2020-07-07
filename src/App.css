@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Galada&family=Montserrat+Subrayada:wght@700&family=Source+Code+Pro:wght@700&display=swap');
+
+.fondamento {
+	font-family: 'Fondamento', cursive;
+}
+.galada {
+	font-family: 'Galada', cursive;
+}
+.montserrat {
+	font-family: 'Montserrat Subrayada', sans-serif;
+}
+.source {
+	font-family: 'Source Code Pro', monospace;
+}
+
 /* body,
 .Wcont {
 	margin: 0;
@@ -116,22 +131,20 @@ Button::after,
 /* .textDivOptions {text-align: center;}*/
 
 #top-container {
-	display:flex;
+	display: flex;
 	justify-content: space-around;
-
 }
-
 
 .fixed-top {
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 1030;	
+	z-index: 1030;
 }
 
-.Route{
-	background-color: #222222
+.Route {
+	background-color: #222222;
 }
 
 .footer {
@@ -146,6 +159,7 @@ Button::after,
 	float: left;
 }
 
-h1, h2{
+h1,
+h2 {
 	text-align: center;
 }
