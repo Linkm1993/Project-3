@@ -37,7 +37,8 @@ export default ({
 }) => {
 	return (
 		<div className="canvasContainer">
-			<div id="canvas" className="canvas" style={{ position: 'relative', height: '310px', width: '414px' }}>
+			<div id="canvas" className="canvas" style={{ position: 'relative', height: '310px', width: '414px', margin: '0 auto' }}
+			>
 				<div
 					id="imagelayer"
 					className="imageLayer"
@@ -85,10 +86,11 @@ export default ({
 				</div>
 			</div>
 
-			<div id="shareSave">
-				<button onClick={(e) => renderImage('share')}>Save to DB</button>
-				<button onClick={(e) => renderImage('save')}>Download</button>
-				<Uploaded setImage={setImage} />
+			<div id="shareSave" aria-label="Canvas Button Group" className="d-flex justify-content-center">
+				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('share')}>Save to DB</button>
+				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('save')}>Download</button>
+				<Upload setImage={setImage} />
+				<button type="button" class="btn btn-secondary mx-2 mt-1" >Third Button</button>
 				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
 					download
 				</a>
