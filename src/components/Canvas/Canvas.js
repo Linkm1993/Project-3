@@ -55,7 +55,7 @@ export default ({
 						bottom: 0,
 						backgroundImage: `url(${image})`,
 						// filter: `saturate(${saturation}) blur(${blur}px) invert(${invert}%)`,
-						backgroundSize: 'cover',
+						backgroundSize: '100% 100%',
 						zIndex: '1'
 					}}
 				/>

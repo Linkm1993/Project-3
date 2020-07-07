@@ -34,7 +34,7 @@ function Upload({ setImage }) {
 					alt="upload location"
 					ref={uploadedImage}
 					style={{
-						display: 'none'
+						display: 'none',
 					}}
 				/>
 
