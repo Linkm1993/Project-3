@@ -89,8 +89,7 @@ export default ({
 			<div id="shareSave" aria-label="Canvas Button Group" className="d-flex justify-content-center">
 				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('share')}>Save to DB</button>
 				<button type="button" class="btn btn-secondary mx-2 mt-1" onClick={(e) => renderImage('save')}>Download</button>
-				<Upload setImage={setImage} />
-				<button type="button" class="btn btn-secondary mx-2 mt-1" >Third Button</button>
+				<Uploaded setImage={setImage} />
 				<a id="downloader" href="#canvas" download style={{ visibility: 'hidden', width: 0, height: 0 }}>
 					download
 				</a>

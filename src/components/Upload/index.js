@@ -38,7 +38,8 @@ function Upload({ setImage }) {
 					}}
 				/>
 
-			<button onClick={() => imageUploader.current.click()}>Upload Image</button>
+			<button type="button" class="btn btn-secondary mx-2 mt-1"
+			onClick={() => imageUploader.current.click()}>Upload Image</button>
 		</div>
 	);
 }
