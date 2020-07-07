@@ -39,14 +39,10 @@ export default ({
 }) => {
 	return (
 		<div className="canvasContainer">
-<<<<<<< HEAD
-			<div id="canvas" className="canvas" style={{ position: 'relative', height: '310px', width: '414px', margin: '0 auto'}}
-=======
 			<div
 				id="canvas"
 				className="canvas"
 				style={{ position: 'relative', height: '310px', width: '414px', margin: '0 auto' }}
->>>>>>> master
 			>
 				<div
 					id="imagelayer"
