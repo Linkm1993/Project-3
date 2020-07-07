@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import html2canvas from 'html2canvas';
 import axios from 'axios';
 import Uploaded from '../Upload'
