@@ -69,7 +69,7 @@ npm start
 ## Breakdown of Roles by Member
 
 * **Nate** - Database Seeds and setup, Upload from Machine & Gallery 
-* **Regina** - Research (Twitter, Ant Design), Authentication, CSS, **Professional Googler**  
+* **Regina** - Research (Twitter, Ant Design), Authentication, CSS  
 * **Kenneth** - Canvas, HTML2Canvas, Text and Image CSS Manipulation  
 * **Matt** -  Recaptcha, Deployment, Research (Imgur & Twitter), Post Route  
 * **Alex** - Wireframes, Models, Get Route, Local Storage, Bootstrap, Gallery
