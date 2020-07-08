@@ -13,117 +13,6 @@
 	font-family: 'Source Code Pro', monospace;
 }
 
-/* body,
-.Wcont {
-	margin: 0;
-	padding: 0;
-	font-family: "montserrat", sans-serif;
-	background-image: linear-gradient(125deg, #6a89cc, #b8e994);
-	background-repeat: no-repeat;
-	min-height: 100vh;
-	text-align: center;
-	width: 100%;
-	top: 50%;
-} */
-
-/* .h2 {
-	font-size: 65px;
-	margin: 0;
-	font-weight: 900;
-	letter-spacing: 3px;
-	background: url(./Canva\ -\ Jack\ Skelington\ Vinyl\ Figure\ \(3\).jpg) center no-repeat;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text; */
-/* } */
-/* 
-.h3 {
-	text-decoration: none;
-	color: #f1452baa;
-	padding: 12px 24px;
-	font-size: 30px;
-	display: inline-block;
-	border-radius: 25px;
-	text-transform: uppercase;
-} */
-/* 
-span {
-	color: rgb(32, 151, 122);
-}
-
-p {
-	color: white;
-}
-
-h1 {
-	color: white;
-}
-
-.yellow {
-	color: yellow;
-}
-
-Button,
-.button,
-.Route {
-	font-family: 'montserrat', sans-serif;
-	border-radius: 25px;
-	width: 200px;
-	height: 60px;
-	font-size: 25px;
-	background: #809fe0;
-	border: 4px solid rgb(153, 230, 243);
-	transform: translate(-50%, -50%);
-	cursor: pointer;
-	color: rgb(12, 12, 12);
-	font-weight: bold;
-	transition: 0.3s linear;
-	display: inline-block;
-	text-decoration: none;
-	margin-top: 15px;
-}
-
-Button::before,
-Button::after,
-.button::before,
-.button::after,
-.Route::before,
-.Route::after {
-	content: "";
-	position: absolute;
-	width: 14px;
-	height: 4px;
-	background: red;
-	transform: skewX(50deg);
-	transition: .4s linear;
-}
-
-Button::before,
-.button::before,
-.Route::before {
-	top: -4px;
-	left: 10%;
-}
-
-Button:hover::before,
-.button:hover::before,
-.Route:hover::before {
-	left: 80%;
-}
-
-Button:hover::after,
-.button:hover::after,
-.Route:hover::after {
-	right: 80%;
-}
-
-Button::after,
-.button::after,
-.Route::after {
-	bottom: -4px;
-	right: 10%;
-}
-*/
-
 .textLayer {
 	text-align: center;
 }
@@ -135,24 +24,8 @@ Button::after,
 	justify-content: space-around;
 }
 
-.fixed-top {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-}
-
 .Route {
 	background-color: #222222;
-}
-
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #e9ecef;
 }
 
 .image {
