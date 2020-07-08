@@ -55,14 +55,16 @@ npm start
 
 ## Technologies Implemented
 
-* React js
-* MongoDB
-* Twitter API
-* Heroku
-* Node.js
+* Bootstrap
+* React
+* HTML Canvas
+* Captcha
+* Mongo & Mongoose
+* HTML2Canvas
+* Node
 * Express
-* Ant Design
-* Memes API
+* Heroku
+
 
 ## Breakdown of Roles by Member
 
