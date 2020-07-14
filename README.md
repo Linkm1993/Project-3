@@ -2,12 +2,27 @@
 
 ## Description
             
-An app that lets users overlay text onto images, renders said output to be downloaded to user’s device or uploaded to social media.
+An app that lets users overlay text onto images, renders said output to be downloaded to user’s device or save new templates to the local database for future use.
 
+## User Story
+```
+As a USER  
+I WANT to create my own custom images from my own photos  
+SO THAT I can share them with my friends and family
 
-![](public/img/screen-project.png)
+```
+
+## Welcome page:
+
+![](public/images/welcome.png)
+
+## Meme page:
+
+![](public/images/meme.png)
 
 ## Deployed app: 
+
+[Meme, Myself, and I](https://powerful-taiga-38043.herokuapp.com/ "Meme, Myself, and I")
 
             
 ## Table of Contents
@@ -45,38 +60,61 @@ npm start
 
 ## Technologies Implemented
 
-* React js
-* MongoDB
-* Twitter API
-* Heroku
-* Node.js
+* Bootstrap
+* React
+* HTML Canvas
+* Captcha
+* Mongo & Mongoose
+* HTML2Canvas
+* Node
 * Express
-* Ant Design
-* Memes API
+* Heroku
+
 
 ## Breakdown of Roles by Member
 
-Nate - Database Setup, Upload Script
-Regina - Twitter Research, Front-End, Ant Design Research
-Kenneth - Canvas, HTML2Canvas, Raw Image Data,
-Matt - Express, Recaptcha, Imgur & Twitter Research
-Alex - Wireframes, Models, PM, Page Routing, Twitter Research
+* **Nate** - Database Seeds and setup, Upload from Machine & Gallery 
+* **Regina** - Research (Twitter, Ant Design), Authentication, CSS, **Professional Googler**  
+* **Kenneth** - Canvas, HTML2Canvas, Text and Image CSS Manipulation  
+* **Matt** -  Recaptcha, Deployment, Research (Imgur & Twitter), Post Route  
+* **Alex** - Wireframes, Models, Get Route, Local Storage, Bootstrap, Gallery
 
 
 ## Future Updates
-            
+* Custom filters for image processing
+
+
+* Deleting images from database
+
+
+* Fully implementing authentication & connecting created images to users
+
+
+* “Undo” button - reloading an image back into gallery, adjusting text and image processing
+
+
+* Nicer front end, including animations and mobile responsiveness
+
+
+* Sharing images to social media
+           
             
 ## Contributing
             
+
+![bioImage](https://avatars0.githubusercontent.com/u/58832810?v=4&s=200)
 [![](https://img.shields.io/badge/gitHub-kdeguzm3-purple?style=plastic)](https://www.github.com/kdeguzm3) | 
 [![](https://img.shields.io/badge/email-cosplaydiver@gmail.com-purple?style=plastic)](mailto:cosplaydiver@gmail.com)
 
+![bioImage](https://avatars3.githubusercontent.com/u/58890404?v=4&s=200)
 [![](https://img.shields.io/badge/gitHub-Antidetka-pink?style=plastic)](https://www.github.com/Antidetka) | 
 [![](https://img.shields.io/badge/email-musovirova@yahoo.com-pink?style=plastic)](mailto:musovirova@yahoo.com)
 
+![bioImage](https://avatars3.githubusercontent.com/u/12203157?v=4&s=200)
 [![](https://img.shields.io/badge/gitHub-altays-blue?style=plastic)](https://www.github.com/altays) | 
 [![](https://img.shields.io/badge/email-altays633@gmail.com-blue?style=plastic)](mailto:altays633@gmail.com)
 
+![bioImage](https://avatars2.githubusercontent.com/u/59449041?v=4&s=200)
 [![](https://img.shields.io/badge/gitHub-nrlong-yellow?style=plastic)](https://www.github.com/nrlong) | 
 [![](https://img.shields.io/badge/email-nrlong13@gmail.com-yellow?style=plastic)](mailto:nrlong13@gmail.com)
  
@@ -87,6 +125,6 @@ MIT
           
             
 ## Questions
-            
+![bioImage](https://avatars0.githubusercontent.com/u/46576277?v=4&s=200)            
 [![](https://img.shields.io/badge/gitHub-Linkm1993-green?style=plastic)](https://www.github.com/Linkm1993) | 
 [![](https://img.shields.io/badge/email-Linkm1993@gmail.com-green?style=plastic)](mailto:Linkm1993@gmail.com)

@@ -16,6 +16,7 @@ const renderImage = (action) => {
 			axios.post('/api/insert', {
 				image: pngFile
 			});
+			window.location.reload('true')
 		}
 	});
 };

@@ -13,6 +13,7 @@
 	font-family: 'Source Code Pro', monospace;
 }
 
+<<<<<<< HEAD
 /* body,
 .Wcont {
 	margin: 0;
@@ -150,6 +151,8 @@ Button::after,
 }
 */
 
+=======
+>>>>>>> master
 .textLayer {
 	text-align: center;
 }
@@ -161,24 +164,8 @@ Button::after,
 	justify-content: space-around;
 }
 
-.fixed-top {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-}
-
 .Route {
 	background-color: #222222;
-}
-
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #e9ecef;
 }
 
 .image {
