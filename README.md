@@ -12,8 +12,13 @@ SO THAT I can share them with my friends and family
 
 ```
 
+## Welcome page:
 
-![](public/img/screen-project.png)
+![](public/images/welcome.png)
+
+## Meme page:
+
+![](public/images/meme.png)
 
 ## Deployed app: 
 
